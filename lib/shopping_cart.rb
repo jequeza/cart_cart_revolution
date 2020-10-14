@@ -1,6 +1,9 @@
 class ShoppingCart
-  def initialize(argument_1, argument_2)
-    @argument_1 = argument_1
-    @argument_2 = argument_2
+  attr_reader :name, :capacity, :products
+
+  def initialize(name, capacity)
+    @name = name
+    @capacity = capacity.to_i
+    @products = []
   end
 end
